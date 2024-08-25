@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Korean Listening Quiz</title>
+    <link rel="stylesheet" href="allcourse.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Korean Listening Quiz</h1>
+      <audio controls>
+        <source src="korean_audio.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <div class="quiz">
+        <h2>Questions:</h2>
+        <form id="quizForm">
+          <label for="q1">1. What is the main topic of the audio?</label>
+          <input type="text" id="q1" name="q1" />
+          <label for="q2">2. What is the name of the speaker?</label>
+          <input type="text" id="q2" name="q2" />
+          <label for="q3">3. What time does the event start?</label>
+          <input type="text" id="q3" name="q3" />
+          <button type="button" onclick="checkAnswers()">Submit</button>
+        </form>
+        <div id="result"></div>
+      </div>
+    </div>
+    <script src="allcourse.js"> </script>
+  </body>
+</html>
